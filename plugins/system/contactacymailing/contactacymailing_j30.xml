@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="3.0" method="upgrade" group="system">
+	<name>AcyMailing : integration with your contact component</name>
+	<creationDate>August 2010</creationDate>
+	<version>1.1.0</version>
+	<author>Acyba</author>
+	<authorEmail>dev@acyba.com</authorEmail>
+	<authorUrl>http://www.acyba.com</authorUrl>
+	<copyright>Copyright (C) 2009-2013 ACYBA SARL - All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+	<description>Automatically subscribe the user to AcyMailing via your Joomla contact component</description>
+	<files>
+		<filename plugin="contactacymailing">contactacymailing.php</filename>
+		<filename>contactacymailing.xml</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

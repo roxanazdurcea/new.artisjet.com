@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.0.0"
+	client="site"
+	method="upgrade">
+		<name>Branch Locations Google Map</name>
+        <author>PluginValley.com</author>
+        <creationDate>November 2013</creationDate>
+        <copyright>PluginValley.com</copyright>
+        <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+        <authorEmail>PluginValley@ymail.com</authorEmail>
+        <authorUrl>http://www.PluginValley.com</authorUrl>
+        <version>1.0.1</version>
+	<description>
+<![CDATA[
+<span style="font-size:21px; color:#92D900">Branch Locations Google Map Module by PluginValley - Version 1.0.1</span>
+<br /><br />Show Multiple Locations on a Google Map
+<br /><br />
+We Make Cool Plugins For Your Websites!  <br /> <br />
+If you have any questions please never hesitate to use PluginValley Forum for Support!<br /><br />
+<a href="http://www.pluginvalley.com" style="font-size:15px;" target="_blank">Visit PluginValley for the Latest Works!</a>
+<div style="text-align:left; margin-top:10px;"><img src="../modules/mod_branchlocations/images/logo.jpg"></div>
+<p>
+]]>	
+	</description>
+        <files>
+                <filename module="mod_branchlocations">mod_branchlocations.php</filename>
+                <filename>index.html</filename>
+				<folder>images</folder>				
+        </files>
+		<languages>
+				<language tag="en-GB">en-GB.mod_branchlocations.ini</language>
+				<language tag="en-GB">en-GB.mod_branchlocations.sys.ini</language>
+		</languages>
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="maptype" type="list" default="ROADMAP" label="MOD_BRANCHLOCATIONS_FIELD_MAPTYPE" description="MOD_BRANCHLOCATIONS_FIELD_MAPTYPE_DESC">
+					<option value="ROADMAP">MOD_BRANCHLOCATIONS_ROADMAP</option>
+					<option value="SATELLITE">MOD_BRANCHLOCATIONS_SATELLITE</option>
+					<option value="HYBRID">MOD_BRANCHLOCATIONS_HYBRID</option>
+					<option value="TERRAIN">MOD_BRANCHLOCATIONS_TERRAIN</option>
+				</field>
+				<field name="mapzoom" type="text" size="20" default="8" label="MOD_BRANCHLOCATIONS_FIELD_MAPZOOM" description="MOD_BRANCHLOCATIONS_FIELD_MAPZOOM_DESC" />
+				<field name="width" type="text" size="20" default="400px" label="MOD_BRANCHLOCATIONS_FIELD_WIDTH" description="MOD_BRANCHLOCATIONS_FIELD_WIDTH_DESC" />
+				<field name="height" type="text" size="20" default="400px" label="MOD_BRANCHLOCATIONS_FIELD_HEIGHT" description="MOD_BRANCHLOCATIONS_FIELD_HEIGHT_DESC" />
+				<field name="mapstyle" type="textarea" rows="3" cols="40" default="padding:5px; border:4px solid #C9C9C9; margin-top:10px;" label="MOD_BRANCHLOCATIONS_FIELD_MAPSTYLE" description="MOD_BRANCHLOCATIONS_FIELD_MAPSTYLE_DESC" />
+				<field name="logostyle" type="textarea" rows="3" cols="40" default="float:left; margin:0 2px 2px 0;" label="MOD_BRANCHLOCATIONS_FIELD_LOGOSTYLE" description="MOD_BRANCHLOCATIONS_FIELD_LOGOSTYLE_DESC" />
+				<field name="ctitlestyle" type="textarea" rows="3" cols="40" default="font-size:14px; font-weight:bold; color:#5AA426;" label="MOD_BRANCHLOCATIONS_FIELD_CTITLESTYLE" description="MOD_BRANCHLOCATIONS_FIELD_CTITLESTYLE_DESC" />
+				<field name="lat" type="text" size="20" default="34.147896" label="MOD_BRANCHLOCATIONS_FIELD_LAT" description="MOD_BRANCHLOCATIONS_FIELD_LAT_DESC" />
+				<field name="lon" type="text" size="20" default="-118.428632" label="MOD_BRANCHLOCATIONS_FIELD_LON" description="MOD_BRANCHLOCATIONS_FIELD_LON_DESC" />
+				<!--<field name="pin" type="text" size="50" default="modules/mod_servicearea/images/pin2.png" label="MOD_BRANCHLOCATIONS_FIELD_PIN" description="MOD_BRANCHLOCATIONS_FIELD_PIN_DESC" />-->
+			</fieldset>
+			<fieldset name="br1" label="MOD_BRANCHLOCATIONS_FIELDSETLABEL_BRANCH1">
+				<field name="title1" type="text" size="50" default="Our Branch 1" label="MOD_BRANCHLOCATIONS_FIELD_TITLE1" description="MOD_BRANCHLOCATIONS_FIELD_TITLE1" />
+				<field name="addressline11" type="text" size="50" default="Branch 1 Address Line 1" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE11" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE11_DESC" />	
+				<field name="addressline21" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE21" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE21_DESC" />		
+				<field name="phone1" type="text" size="50" default="Branch 1 Phone" label="MOD_BRANCHLOCATIONS_FIELD_PHONE1" description="MOD_BRANCHLOCATIONS_FIELD_PHONE1_DESC" />		
+				<field name="fax1" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_FAX1" description="MOD_BRANCHLOCATIONS_FIELD_FAX1_DESC" />	
+				<field name="uselogo1" type="radio" default="0" label="MOD_BRANCHLOCATIONS_FIELD_USELOGO1" description="MOD_BRANCHLOCATIONS_FIELD_USELOGO1_DESC">
+					<option value="1">MOD_BRANCHLOCATIONS_YES</option>
+					<option value="0">MOD_BRANCHLOCATIONS_NO</option>
+				</field>
+				<field name="logo1" type="filelist" default="" label="MOD_BRANCHLOCATIONS_FIELD_LOGO1" description="MOD_BRANCHLOCATIONS_FIELD_LOGO1_DESC" directory="modules/mod_branchlocations/images/logos" filter="" exclude="index.html" stripext="" />
+				<field name="lat1" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LAT1" description="MOD_BRANCHLOCATIONS_FIELD_LAT1_DESC" />
+				<field name="lon1" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LON1" description="MOD_BRANCHLOCATIONS_FIELD_LON1_DESC" />
+			</fieldset>
+			<fieldset name="br2" label="MOD_BRANCHLOCATIONS_FIELDSETLABEL_BRANCH2">
+				<field name="title2" type="text" size="50" default="Our Branch 2" label="MOD_BRANCHLOCATIONS_FIELD_TITLE2" description="MOD_BRANCHLOCATIONS_FIELD_TITLE2" />
+				<field name="addressline12" type="text" size="50" default="Branch 2 Address Line 2" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE12" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE12_DESC" />	
+				<field name="addressline22" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE22" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE22_DESC" />		
+				<field name="phone2" type="text" size="50" default="Branch 2 Phone" label="MOD_BRANCHLOCATIONS_FIELD_PHONE2" description="MOD_BRANCHLOCATIONS_FIELD_PHONE2_DESC" />		
+				<field name="fax2" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_FAX2" description="MOD_BRANCHLOCATIONS_FIELD_FAX2_DESC" />	
+				<field name="uselogo2" type="radio" default="0" label="MOD_BRANCHLOCATIONS_FIELD_USELOGO2" description="MOD_BRANCHLOCATIONS_FIELD_USELOGO2_DESC">
+					<option value="1">MOD_BRANCHLOCATIONS_YES</option>
+					<option value="0">MOD_BRANCHLOCATIONS_NO</option>
+				</field>
+				<field name="logo2" type="filelist" default="" label="MOD_BRANCHLOCATIONS_FIELD_LOGO2" description="MOD_BRANCHLOCATIONS_FIELD_LOGO2_DESC" directory="modules/mod_branchlocations/images/logos" filter="" exclude="index.html" stripext="" />
+				<field name="lat2" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LAT2" description="MOD_BRANCHLOCATIONS_FIELD_LAT2_DESC" />
+				<field name="lon2" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LON2" description="MOD_BRANCHLOCATIONS_FIELD_LON2_DESC" />
+			</fieldset>
+			<fieldset name="br3" label="MOD_BRANCHLOCATIONS_FIELDSETLABEL_BRANCH3">
+				<field name="title3" type="text" size="50" default="Our Branch 3" label="MOD_BRANCHLOCATIONS_FIELD_TITLE3" description="MOD_BRANCHLOCATIONS_FIELD_TITLE3" />
+				<field name="addressline13" type="text" size="50" default="Branch 3 Address Line 3" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE13" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE13_DESC" />	
+				<field name="addressline23" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE23" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE23_DESC" />		
+				<field name="phone3" type="text" size="50" default="Branch 3 Phone" label="MOD_BRANCHLOCATIONS_FIELD_PHONE3" description="MOD_BRANCHLOCATIONS_FIELD_PHONE3_DESC" />		
+				<field name="fax3" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_FAX3" description="MOD_BRANCHLOCATIONS_FIELD_FAX3_DESC" />	
+				<field name="uselogo3" type="radio" default="0" label="MOD_BRANCHLOCATIONS_FIELD_USELOGO3" description="MOD_BRANCHLOCATIONS_FIELD_USELOGO3_DESC">
+					<option value="1">MOD_BRANCHLOCATIONS_YES</option>
+					<option value="0">MOD_BRANCHLOCATIONS_NO</option>
+				</field>
+				<field name="logo3" type="filelist" default="" label="MOD_BRANCHLOCATIONS_FIELD_LOGO3" description="MOD_BRANCHLOCATIONS_FIELD_LOGO3_DESC" directory="modules/mod_branchlocations/images/logos" filter="" exclude="index.html" stripext="" />
+				<field name="lat3" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LAT3" description="MOD_BRANCHLOCATIONS_FIELD_LAT3_DESC" />
+				<field name="lon3" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LON3" description="MOD_BRANCHLOCATIONS_FIELD_LON3_DESC" />
+			</fieldset>
+			<fieldset name="br4" label="MOD_BRANCHLOCATIONS_FIELDSETLABEL_BRANCH4">
+				<field name="title4" type="text" size="50" default="Our Branch 4" label="MOD_BRANCHLOCATIONS_FIELD_TITLE4" description="MOD_BRANCHLOCATIONS_FIELD_TITLE4" />
+				<field name="addressline14" type="text" size="50" default="Branch 4 Address Line 4" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE14" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE14_DESC" />	
+				<field name="addressline24" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE24" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE24_DESC" />		
+				<field name="phone4" type="text" size="50" default="Branch 4 Phone" label="MOD_BRANCHLOCATIONS_FIELD_PHONE4" description="MOD_BRANCHLOCATIONS_FIELD_PHONE4_DESC" />		
+				<field name="fax4" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_FAX4" description="MOD_BRANCHLOCATIONS_FIELD_FAX4_DESC" />	
+				<field name="uselogo4" type="radio" default="0" label="MOD_BRANCHLOCATIONS_FIELD_USELOGO4" description="MOD_BRANCHLOCATIONS_FIELD_USELOGO4_DESC">
+					<option value="1">MOD_BRANCHLOCATIONS_YES</option>
+					<option value="0">MOD_BRANCHLOCATIONS_NO</option>
+				</field>
+				<field name="logo4" type="filelist" default="" label="MOD_BRANCHLOCATIONS_FIELD_LOGO4" description="MOD_BRANCHLOCATIONS_FIELD_LOGO4_DESC" directory="modules/mod_branchlocations/images/logos" filter="" exclude="index.html" stripext="" />
+				<field name="lat4" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LAT4" description="MOD_BRANCHLOCATIONS_FIELD_LAT4_DESC" />
+				<field name="lon4" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LON4" description="MOD_BRANCHLOCATIONS_FIELD_LON4_DESC" />
+			</fieldset>
+			<fieldset name="br5" label="MOD_BRANCHLOCATIONS_FIELDSETLABEL_BRANCH5">
+				<field name="title5" type="text" size="50" default="Our Branch 5" label="MOD_BRANCHLOCATIONS_FIELD_TITLE5" description="MOD_BRANCHLOCATIONS_FIELD_TITLE5" />
+				<field name="addressline15" type="text" size="50" default="Branch 5 Address Line 5" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE15" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE15_DESC" />	
+				<field name="addressline25" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE25" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE25_DESC" />		
+				<field name="phone5" type="text" size="50" default="Branch 5 Phone" label="MOD_BRANCHLOCATIONS_FIELD_PHONE5" description="MOD_BRANCHLOCATIONS_FIELD_PHONE5_DESC" />		
+				<field name="fax5" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_FAX5" description="MOD_BRANCHLOCATIONS_FIELD_FAX5_DESC" />	
+				<field name="uselogo5" type="radio" default="0" label="MOD_BRANCHLOCATIONS_FIELD_USELOGO5" description="MOD_BRANCHLOCATIONS_FIELD_USELOGO5_DESC">
+					<option value="1">MOD_BRANCHLOCATIONS_YES</option>
+					<option value="0">MOD_BRANCHLOCATIONS_NO</option>
+				</field>
+				<field name="logo5" type="filelist" default="" label="MOD_BRANCHLOCATIONS_FIELD_LOGO5" description="MOD_BRANCHLOCATIONS_FIELD_LOGO5_DESC" directory="modules/mod_branchlocations/images/logos" filter="" exclude="index.html" stripext="" />
+				<field name="lat5" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LAT5" description="MOD_BRANCHLOCATIONS_FIELD_LAT5_DESC" />
+				<field name="lon5" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LON5" description="MOD_BRANCHLOCATIONS_FIELD_LON5_DESC" />
+			</fieldset>
+			<fieldset name="br6" label="MOD_BRANCHLOCATIONS_FIELDSETLABEL_BRANCH6">
+				<field name="title6" type="text" size="50" default="Our Branch 6" label="MOD_BRANCHLOCATIONS_FIELD_TITLE6" description="MOD_BRANCHLOCATIONS_FIELD_TITLE6" />
+				<field name="addressline16" type="text" size="50" default="Branch 6 Address Line 6" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE16" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE16_DESC" />	
+				<field name="addressline26" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE26" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE26_DESC" />		
+				<field name="phone6" type="text" size="50" default="Branch 6 Phone" label="MOD_BRANCHLOCATIONS_FIELD_PHONE6" description="MOD_BRANCHLOCATIONS_FIELD_PHONE6_DESC" />		
+				<field name="fax6" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_FAX6" description="MOD_BRANCHLOCATIONS_FIELD_FAX6_DESC" />	
+				<field name="uselogo6" type="radio" default="0" label="MOD_BRANCHLOCATIONS_FIELD_USELOGO6" description="MOD_BRANCHLOCATIONS_FIELD_USELOGO6_DESC">
+					<option value="1">MOD_BRANCHLOCATIONS_YES</option>
+					<option value="0">MOD_BRANCHLOCATIONS_NO</option>
+				</field>
+				<field name="logo6" type="filelist" default="" label="MOD_BRANCHLOCATIONS_FIELD_LOGO6" description="MOD_BRANCHLOCATIONS_FIELD_LOGO6_DESC" directory="modules/mod_branchlocations/images/logos" filter="" exclude="index.html" stripext="" />
+				<field name="lat6" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LAT6" description="MOD_BRANCHLOCATIONS_FIELD_LAT6_DESC" />
+				<field name="lon6" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LON6" description="MOD_BRANCHLOCATIONS_FIELD_LON6_DESC" />
+			</fieldset>
+			<fieldset name="br7" label="MOD_BRANCHLOCATIONS_FIELDSETLABEL_BRANCH7">
+				<field name="title7" type="text" size="50" default="Our Branch 7" label="MOD_BRANCHLOCATIONS_FIELD_TITLE7" description="MOD_BRANCHLOCATIONS_FIELD_TITLE7" />
+				<field name="addressline17" type="text" size="50" default="Branch 7 Address Line 7" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE17" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE17_DESC" />	
+				<field name="addressline27" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE27" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE27_DESC" />		
+				<field name="phone7" type="text" size="50" default="Branch 7 Phone" label="MOD_BRANCHLOCATIONS_FIELD_PHONE7" description="MOD_BRANCHLOCATIONS_FIELD_PHONE7_DESC" />		
+				<field name="fax7" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_FAX7" description="MOD_BRANCHLOCATIONS_FIELD_FAX7_DESC" />	
+				<field name="uselogo7" type="radio" default="0" label="MOD_BRANCHLOCATIONS_FIELD_USELOGO7" description="MOD_BRANCHLOCATIONS_FIELD_USELOGO7_DESC">
+					<option value="1">MOD_BRANCHLOCATIONS_YES</option>
+					<option value="0">MOD_BRANCHLOCATIONS_NO</option>
+				</field>
+				<field name="logo7" type="filelist" default="" label="MOD_BRANCHLOCATIONS_FIELD_LOGO7" description="MOD_BRANCHLOCATIONS_FIELD_LOGO7_DESC" directory="modules/mod_branchlocations/images/logos" filter="" exclude="index.html" stripext="" />
+				<field name="lat7" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LAT7" description="MOD_BRANCHLOCATIONS_FIELD_LAT7_DESC" />
+				<field name="lon7" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LON7" description="MOD_BRANCHLOCATIONS_FIELD_LON7_DESC" />
+			</fieldset>
+			<fieldset name="br8" label="MOD_BRANCHLOCATIONS_FIELDSETLABEL_BRANCH8">
+				<field name="title8" type="text" size="50" default="Our Branch 8" label="MOD_BRANCHLOCATIONS_FIELD_TITLE8" description="MOD_BRANCHLOCATIONS_FIELD_TITLE8" />
+				<field name="addressline18" type="text" size="50" default="Branch 8 Address Line 8" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE18" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE18_DESC" />	
+				<field name="addressline28" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE28" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE28_DESC" />		
+				<field name="phone8" type="text" size="50" default="Branch 8 Phone" label="MOD_BRANCHLOCATIONS_FIELD_PHONE8" description="MOD_BRANCHLOCATIONS_FIELD_PHONE8_DESC" />		
+				<field name="fax8" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_FAX8" description="MOD_BRANCHLOCATIONS_FIELD_FAX8_DESC" />	
+				<field name="uselogo8" type="radio" default="0" label="MOD_BRANCHLOCATIONS_FIELD_USELOGO8" description="MOD_BRANCHLOCATIONS_FIELD_USELOGO8_DESC">
+					<option value="1">MOD_BRANCHLOCATIONS_YES</option>
+					<option value="0">MOD_BRANCHLOCATIONS_NO</option>
+				</field>
+				<field name="logo8" type="filelist" default="" label="MOD_BRANCHLOCATIONS_FIELD_LOGO8" description="MOD_BRANCHLOCATIONS_FIELD_LOGO8_DESC" directory="modules/mod_branchlocations/images/logos" filter="" exclude="index.html" stripext="" />
+				<field name="lat8" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LAT8" description="MOD_BRANCHLOCATIONS_FIELD_LAT8_DESC" />
+				<field name="lon8" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LON8" description="MOD_BRANCHLOCATIONS_FIELD_LON8_DESC" />
+			</fieldset>
+			<fieldset name="br9" label="MOD_BRANCHLOCATIONS_FIELDSETLABEL_BRANCH9">
+				<field name="title9" type="text" size="50" default="Our Branch 9" label="MOD_BRANCHLOCATIONS_FIELD_TITLE9" description="MOD_BRANCHLOCATIONS_FIELD_TITLE9" />
+				<field name="addressline19" type="text" size="50" default="Branch 9 Address Line 9" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE19" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE19_DESC" />	
+				<field name="addressline29" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE29" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE29_DESC" />		
+				<field name="phone9" type="text" size="50" default="Branch 9 Phone" label="MOD_BRANCHLOCATIONS_FIELD_PHONE9" description="MOD_BRANCHLOCATIONS_FIELD_PHONE9_DESC" />		
+				<field name="fax9" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_FAX9" description="MOD_BRANCHLOCATIONS_FIELD_FAX9_DESC" />	
+				<field name="uselogo9" type="radio" default="0" label="MOD_BRANCHLOCATIONS_FIELD_USELOGO9" description="MOD_BRANCHLOCATIONS_FIELD_USELOGO9_DESC">
+					<option value="1">MOD_BRANCHLOCATIONS_YES</option>
+					<option value="0">MOD_BRANCHLOCATIONS_NO</option>
+				</field>
+				<field name="logo9" type="filelist" default="" label="MOD_BRANCHLOCATIONS_FIELD_LOGO9" description="MOD_BRANCHLOCATIONS_FIELD_LOGO9_DESC" directory="modules/mod_branchlocations/images/logos" filter="" exclude="index.html" stripext="" />
+				<field name="lat9" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LAT9" description="MOD_BRANCHLOCATIONS_FIELD_LAT9_DESC" />
+				<field name="lon9" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LON9" description="MOD_BRANCHLOCATIONS_FIELD_LON9_DESC" />
+			</fieldset>
+			<fieldset name="br10" label="MOD_BRANCHLOCATIONS_FIELDSETLABEL_BRANCH10">
+				<field name="title10" type="text" size="50" default="Our Branch 10" label="MOD_BRANCHLOCATIONS_FIELD_TITLE10" description="MOD_BRANCHLOCATIONS_FIELD_TITLE10" />
+				<field name="addressline110" type="text" size="50" default="Branch 10 Address Line 10" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE110" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE110_DESC" />	
+				<field name="addressline210" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE210" description="MOD_BRANCHLOCATIONS_FIELD_ADDRESSLINE210_DESC" />		
+				<field name="phone10" type="text" size="50" default="Branch 10 Phone" label="MOD_BRANCHLOCATIONS_FIELD_PHONE10" description="MOD_BRANCHLOCATIONS_FIELD_PHONE10_DESC" />		
+				<field name="fax10" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_FAX10" description="MOD_BRANCHLOCATIONS_FIELD_FAX10_DESC" />	
+				<field name="uselogo10" type="radio" default="0" label="MOD_BRANCHLOCATIONS_FIELD_USELOGO10" description="MOD_BRANCHLOCATIONS_FIELD_USELOGO10_DESC">
+					<option value="1">MOD_BRANCHLOCATIONS_YES</option>
+					<option value="0">MOD_BRANCHLOCATIONS_NO</option>
+				</field>
+				<field name="logo10" type="filelist" default="" label="MOD_BRANCHLOCATIONS_FIELD_LOGO10" description="MOD_BRANCHLOCATIONS_FIELD_LOGO10_DESC" directory="modules/mod_branchlocations/images/logos" filter="" exclude="index.html" stripext="" />
+				<field name="lat10" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LAT10" description="MOD_BRANCHLOCATIONS_FIELD_LAT10_DESC" />
+				<field name="lon10" type="text" size="50" default="" label="MOD_BRANCHLOCATIONS_FIELD_LON10" description="MOD_BRANCHLOCATIONS_FIELD_LON10_DESC" />
+			</fieldset>		
+		</fields>
+	</config>
+</extension>

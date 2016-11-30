@@ -1,0 +1,29 @@
+
+
+.flickrimg a {
+opacity:0.5 !important;
+
+}
+
+#flickr_badge_wrapper {
+text-align:left;
+
+}
+
+#flickr_badge_wrapper a:hover {
+opacity:0.5 !important;
+ zoom: 1;
+ filter: alpha(opacity=50);
+ opacity: 0.5;
+ -webkit-transition: opacity .35s ease-in-out;
+ -moz-transition: opacity .35s ease-in-out;
+ -ms-transition: opacity .35s ease-in-out;
+ -o-transition: opacity .35s ease-in-out;
+ transition: opacity .35s ease-in-out;
+
+} 
+
+#container-f {
+text-indent:-5000px;
+display:none;
+}

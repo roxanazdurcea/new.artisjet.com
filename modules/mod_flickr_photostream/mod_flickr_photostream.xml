@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2.0" client="site" method="upgrade">
+    <name>Flickr Photo Stream | Globbersthemes </name>
+    <author>globbers</author>
+    <email>globbers@hotmail.fr</email>
+    <version>1.0</version>
+    <description>Module Flickr Photo Stream joomla 3x and 2.5.
+	
+	 <![CDATA[<h1>Module Flickr Photo Stream joomla 3x and 2.5</h1>
+	    <span style="font-size: 15px;font-weight:bold;">
+			Module Flickr Photo Stream Joomla Extension ,design by globbers.
+			<span style="color:red; font-weight: bold; ">!Not for commercial!!! for commercial use, you must pay a special license (5 EURO) .</span> <br />			
+			<br />Visit globbersthemes: <a href="http://www.globbersthemes.com" target="_blank">http://www.globbersthemes.com</a>.<br />
+			</span>
+			
+
+			<hr />
+
+			<h3><b>OTHER FREE EXTENSIONS </b></h3>
+			<table>
+			<td width="200px">
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/timeline" target="_blank"><b>Timeline Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/revo-slider" target="_blank"><b>Revol Slider Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/pricing-table" target="_blank"><b>Pricing Table Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/accordeon" target="_blank"><b>Accordeon Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/mixitup-slider" target="_blank"><b>Mixitup Portfolio Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/carrousel-slider" target="_blank"><b>Carrousel Slider Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/" target="_blank"><b>Media Folio Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/parallax-slide" target="_blank"><b>Parallax Slider Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/magic-portfolio" target="_blank"><b>Magic Portfolio Joomla Extension</b></a>.</span><br />
+			</td>
+
+			<td width="200px">
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/grid-rotator" target="_blank"><b>Grid Rotator Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/masonry-portfolio" target="_blank"><b>Masonry Portfolio Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/team-manager" target="_blank"><b>Team Manager Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/google-map" target="_blank"><b>Google Map Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/slideshow-image-duo" target="_blank"><b>Slideshow Image Duo Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/gallery-grid" target="_blank"><b>Gallery Grid Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/carrousel-text" target="_blank"><b>Carrousel Text Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/flickr-photostream" target="_blank"><b>Flickr Photostream Joomla Extension</b></a>.</span><br />
+			<span style="margin-right:10px;font-size:15px;"><a href="http://www.globbersthemes.com/joomla-extensions/joomla-extensions-3-and-2-5/grid-rotator" target="_blank"><b>Grid Rotator Joomla Extension</b></a>.</span><br />
+			
+			</td>
+
+		
+			</table>
+			<br /><br />]]>
+	
+	
+	
+	
+	
+	</description>
+    <files>
+       <filename>mod_flickr_photostream.xml</filename>
+        <filename module="mod_flickr_photostream">mod_flickr_photostream.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <folder>assets</folder>
+    </files>
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+			<field name="project_id" type="text" default="129172747@N08" label="flickr ID number:" description="your identity number flickr" />
+			
+			<field name="project_count" type="text" default="9" label="Number of images:" description="number of images flickr, max 20 pictures" />
+			
+			<field name="project_ordering" type="radio" default="latest" label="Ordering your images" description="choose Ordering your images latest or random">
+		        <option value="latest">latest</option>
+		        <option value="random">random</option>
+	        </field>
+			
+			<field name="project_size" type="radio" default="square" label="Size of your images:" description="choose Size of your images:">
+		        <option value="square">Small square box</option>
+		        <option value="thumb">Thumbnail size</option>
+				<option value="mid">Medium size</option>
+	        </field>
+			
+			<field name="project_width" type="text" default="100%" label="Gallery width:" description="choose gallery width" />
+			<field name="project_margin" type="text" default="2px" label="Margin between the images:" description="choose margin between the images" />
+			<field name="project_border" type="text" default="0px" label="Images Border:" description="choose border for your images" />
+			<field name="project_colorborder" type="color" default="#000000" label="Border color:" description="choose border color for your images" />
+			<field name="project_padding" type="text" default="0px" label="Images padding:" description="padding between the border and the image" />
+			
+			</fieldset>
+		</fields>
+    </config>
+</extension>
